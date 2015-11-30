@@ -1,0 +1,33 @@
+36 Ophiuchi is a triple star system 19.5 light years from Earth. It is in the constellation Ophiuchus.
+The primary and secondary stars are nearly identical orange main sequence dwarves of spectral type K2/K1; the tertiary star is an orange main sequence dwarf of spectral type K5.
+Star C is separated from the A-B pair by 700 arc seconds, compared to a minimum of 4.6 arcsec for A-B, so its effect on the movements of the A-B pair is small. A and B have active chromospheres.
+
+
+
+Non-trigonometric distance estimates are marked in italic. The most precise estimate is marked in bold.
+
+
+
+The McDonald Observatory team has set limits to the presence of one or more planets around 36 Ophiuchi A with masses between 0.13 and 5.4 Jupiter masses and average separations spanning between 0.05 and 5.2 astronomical units, although beyond 1.5 AU orbits are inherently unstable around either 36 Ophiuchi A or 36 Ophiuchi B.
+
+
+
+36 Ophiuchi in fiction
+
+
+
+
+
+
+
+
+
+Irwin, Alan W.; Yang, Stephenson L. S. & Walker, Gordon A. H. (1996), "36 Ophiuchi AB: Incompatibility of the Orbit and Precise Radial Velocities", Publications of the Astronomical Society of the Pacific 108: 580, Bibcode:1996PASP..108..580I, doi:10.1086/133768 
+Cayrel de Strobel, G.; Lebreton, Y.; Perrin, M.-N. & Cayrel, R. (1989), "A thorough spectroscopic study of the very nearby triple system - 36 Ophiuchi", Astronomy and Astrophysics 225 (2): 369 380, Bibcode:1989A&A...225..369C 
+Wittenmeyer, R. A.; Endl, Michael; Cochran, William D.; Hatzes, Artie P.; Walker, G. A. H.; Yang, S. L. S. & Paulson, Diane B. (2006), "Detection Limits from the McDonald Observatory Planet Search Program", Astronomical Journal 132 (1): 177 188, arXiv:astro-ph/0604171, Bibcode:2006AJ....132..177W, doi:10.1086/504942 
+Barnes, Sydney A. (2007), "Ages for Illustrative Field Stars Using Gyrochronology: Viability, Limitations, and Errors", The Astrophysical Journal 669 (2): 1167 1189, arXiv:0704.3068, Bibcode:2007ApJ...669.1167B, doi:10.1086/519295 
+
+
+
+"36 Ophiuchi". SolStation. Retrieved 3 November 2005. 
+http://arxiv.org/abs/astro-ph/0604171

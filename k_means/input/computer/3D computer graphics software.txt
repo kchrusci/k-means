@@ -1,0 +1,50 @@
+3D computer graphics software produces computer-generated imagery (CGI) through 3D modeling and 3D rendering or produces 3D models for analytic, scientific and industrial purposes.
+
+
+
+
+
+
+
+3D modeling software is a class of 3D computer graphics software used to produce 3D models. Individual programs of this class are called modeling applications or modelers.
+3D modelers allow users to create and alter models via their 3D mesh. Users can add, subtract, stretch and otherwise change the mesh to their desire. Models can be viewed from a variety of angles, usually simultaneously. Models can be rotated and the view can be zoomed in and out.
+3D modelers can export their models to files, which can then be imported into other applications as long as the metadata are compatible. Many modelers allow importers and exporters to be plugged-in, so they can read and write data in the native formats of other applications.
+Most 3D modelers contain a number of related features, such as ray tracers and other rendering alternatives and texture mapping facilities. Some also contain features that support or allow animation of models. Some may be able to generate full-motion video of a series of rendered scenes (i.e. animation).
+
+
+
+
+Although 3D modeling and CAD software may perform 3D rendering as well (e.g. Autodesk 3ds Max or Blender), exclusive 3D rendering software also exists.
+
+
+
+
+Computer aided design software may employ the same fundamental 3D modeling techniques that 3D modeling software use but their goal differs. They are used in computer-aided engineering, computer-aided manufacturing, Finite element analysis, product lifecycle management, 3D printing and Computer-aided architectural design.
+
+
+
+After producing video, studios then edit or composite the video using programs such as Adobe Premiere Pro or Final Cut Pro at the low end, or Autodesk Combustion, Digital Fusion, Shake at the high-end. Match moving software is commonly used to match live video with computer-generated video, keeping the two in sync as the camera moves.
+Use of real-time computer graphics engines to create a cinematic production is called machinima.
+
+
+
+Software
+Comparison of 3D computer graphics software
+List of 3D computer graphics software
+List of 3D modeling software
+List of 3D rendering software
+Fields of use
+3D data acquisition and object reconstruction
+3D reconstruction
+3D reconstruction from multiple images
+Game development tool
+Game engine
+Level editor
+Render farm
+
+
+
+
+
+
+3D Tools table from the CGSociety wiki

@@ -1,0 +1,79 @@
+3DNow! is an extension to the x86 instruction set developed by Advanced Micro Devices (AMD). It adds single instruction multiple data (SIMD) instructions to the base x86 instruction set, enabling it to perform vector processing, which improves the performance of many graphic-intensive applications. The first microprocessor to implement 3DNow was the AMD K6-2, which was introduced in 1998. When the application was appropriate this raised the speed by about 2-4 times.
+However, the instruction set never gained much popularity, and AMD announced on August 2010 that support for 3DNow would be dropped in future AMD processors, except for two instructions (the PREFETCH and PREFETCHW instructions).
+
+
+
+3DNow was developed at a time when 3D graphics were becoming mainstream in PC multimedia and gaming software. Realtime display of 3D graphics depended heavily on the host CPU's floating-point unit (FPU) to perform floating-point calculations, a task in which AMD's K6 processor was easily outperformed by its competitor, the Intel Pentium II.
+As an enhancement to the MMX instruction set, the 3DNow instruction-set augmented the MMX SIMD registers to support common arithmetic operations (add/subtract/multiply) on single-precision (32-bit) floating-point data. Software written to use AMD's 3DNow instead of the slower x87 FPU could execute up to 4x faster, depending on the instruction-mix.
+
+
+
+
+
+
+The first implementation of 3DNow technology contains 21 new instructions that support SIMD floating-point operations. The 3DNow data format is packed, single-precision, floating-point. The 3DNow instruction set also includes operations for SIMD integer operations, data prefetch, and faster MMX-to-floating-point switching. Later, Intel would add similar (but incompatible) instructions to the Pentium III, known as SSE (Streaming SIMD Extensions).
+3DNow floating-point instructions are the following:
+
+3DNow integer instructions are the following:
+PAVGUSB    Packed 8-bit unsigned integer averaging
+PMULHRW    Packed 16-bit integer multiply with rounding
+3DNow performance-enhancement instructions are the following:
+FEMMS    Faster entry/exit of the MMX or floating-point state
+PREFETCH/PREFETCHW    Prefetch at least a 32-byte line into L1 data cache (this is the non-deprecated instruction)
+
+
+
+There is little or no evidence that the second version of 3DNow was ever officially given its own trade name. This has led to some confusion in documentation that refers to this new instruction set. The most common terms are Extended 3DNow, Enhanced 3DNow and 3DNow+. The phrase "Enhanced 3DNow" can be found in a few locations on the AMD website but the capitalization of "Enhanced" appears to be either purely grammatical or used for emphasis on processors that may or may not have these extensions (the most notable of which references a benchmark page for the K6-III-P that does not have these extensions).
+This extension to the 3DNow instruction set was introduced with the first-generation Athlon processors. The Athlon added 5 new 3DNow instructions and 19 new MMX instructions. Later, the K6-2+ and K6-III+ (both targeted at the mobile market) included the 5 new 3DNow instructions, leaving out the 19 new MMX instructions. The new 3DNow instructions were added to boost DSP. The new MMX instructions were added to boost streaming media.
+The 19 new MMX instructions are a subset of Intel's SSE1 instruction set. In AMD technical manuals, AMD segregates these instructions apart from the 3DNow extensions. In AMD customer product literature, however, this segregation is less clear where the benefits of all 24 new instructions are credited to enhanced 3DNow technology. This has led programmers to come up with their own name for the 19 new MMX instructions. The most common appears to be Integer SSE (ISSE). SSEMMX and MMX2 are also found in video filter documentation from the public domain sector. [It should also be noted that ISSE could also refer to Internet SSE, an early name for SSE.]
+3DNow extension DSP instructions are the following:
+PF2IW    Packed floating-point to integer word conversion with sign extend
+PI2FW    Packed integer word to floating-point conversion
+PFNACC    Packed floating-point negative accumulate
+PFPNACC    Packed floating-point mixed positive-negative accumulate
+PSWAPD    Packed swap doubleword
+MMX extension instructions (Integer SSE) are the following:
+
+
+
+3DNow Professional is a trade name used to indicate processors that combine 3DNow technology with a complete SSE instructions set (such as SSE1, SSE2 or SSE3). The Athlon XP was the first processor to carry the 3DNow Professional trade name, and was the first product in the Athlon family to support the complete SSE1 instruction set (for the total of: 21 original 3DNow instructions; five 3DNow extension DSP instructions; 19 MMX extension instructions; and 52 additional SSE instructions for complete SSE1 compatibility).
+
+
+
+The Geode GX and Geode LX added two new 3DNow instructions which are currently absent in all the other processors.
+3DNow "professional" instructions unique to the Geode GX/LX are the following:
+PFRSQRTV    Reciprocal square root approximation for a pair of 32-bit floats
+PFRCPV    Reciprocal approximation for a pair of 32-bit floats
+
+
+
+One advantage of 3DNow is that it is possible to add or multiply the two numbers that are stored in the same register. With SSE, each number can only be combined with a number in the same position in another register. This capability, known as horizontal in Intel terminology, was the major addition to the SSE3 instruction set.
+A disadvantage with 3DNow is that 3DNow instructions and MMX instructions share the same register-file, whereas SSE adds 8 new independent registers (XMM0 XMM7).
+Because MMX/3DNow registers are shared by the standard x87 FPU, 3DNow instructions and x87 instructions cannot be executed simultaneously. However, because it is aliased to the x87 FPU, the 3DNow and MMX register states can be saved and restored by the traditional x87 F(N)SAVE and F(N)RSTOR instructions. This arrangement allowed operating systems to support 3DNow with no explicit modifications, whereas SSE registers required explicit operating system support to properly save and restore the new XMM registers (via the added FXSAVE and FXRSTOR instructions.)
+The FX* instructions are an upgrade to the older x87 save and restore instructions because these could save not only SSE register states but also those x87 register states (hence which meant that it could save MMX and 3DNow registers too).
+On AMD Athlon XP and K8-based cores (i.e. Athlon 64), assembly programmers have noted that it is possible to combine 3DNow and SSE instructions to reduce register pressure, but in practice it is difficult to improve performance due to the instructions executing on shared functional units.
+
+
+
+
+All AMD processors after K6-2 (inclusive) up to August 2010. Discontinued for future AMD processors.
+National Semiconductor Geode, later AMD Geode.
+VIA C3 (also known as Cyrix III) "Samuel", "Samuel 2" "Ezra", and "Eden ESP" cores.
+IDT Winchip 2
+
+
+
+
+
+
+Case, Brian (1 June 1998). "3DNow Boosts Non-Intel 3D Performance". Microprocessor Report.
+Oberman, S.; Favor, G.; Weber, F. (March 1999). "AMD 3DNow technology: architecture and implementations". IEEE Micro.
+
+
+
+3DNow Technology Partners, archived from the original (removed from AMD's website in early 2001)
+AMD 3DNow Instruction Porting Guide (PDF), archived from the original (removed from AMD's website in 2014)
+3DNow Technology Manual
+AMD Extensions to the 3DNow and MMX Instruction Sets Manual
+AMD Geode LX Processors Data Book
+Explaining the new 3DNow Professional Technology archived from the original

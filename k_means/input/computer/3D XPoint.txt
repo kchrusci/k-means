@@ -1,0 +1,30 @@
+3D XPoint, (pronounced three dee cross point) is a non-volatile memory technology announced by Intel and Micron in July 2015. Though details of the materials and physics of operation were not disclosed, storage density is claimed to be similar to flash memory, durability better and operating speed faster than flash memory though slower than dynamic RAM. Bit storage is based on a change of bulk resistance, in conjunction with a stackable cross-gridded data access array.
+
+
+
+Development of 3D XPoint began around 2005. Intel and Micron had developed other non-volatile phase-change memory (PCM) technologies previously; Mark Durcan of Micron said 3D XPoint architecture differs from previous offerings of PCM, and uses materials that are faster and more stable. An unnamed commentator from marketing also denied that 3D XPoint uses a phase-change or memristor technology.
+
+
+
+3D XPoint uses electrical resistance and is bit addressable. 3D XPoint operation is "not based on electrons," and could speculatively be based on phase-change memory. Similarities to the resistive random-access memory under development by Crossbar Inc. have been noted, but 3D XPoint storage physics is different. 3D XPoint developers indicate that it is based on "changes in resistance of the bulk material.  Intel CEO Brian Krzanich responded to ongoing questions on the XPoint material that the switching was based on "bulk material properties"  which are observed in special materials for storage  and selector  parts of memory cell.
+Claimed write durability is up to 1,000 times higher than flash memory, and claimed latency in an SSD using NVM Express and PCI Express is 10 times lower than NAND SSDs. Individual data cells do not need a transistor, so packing density will be 8-10 times greater than DRAM, and similar to NAND.
+Small quantities of 128 Gbit chips were made initially in 2015 at a wafer fab in Lehi, Utah, operated by IM Flash Technologies LLC. Each chip stacks two 64 Gbit planes.
+
+
+
+Production volumes of both SSD (PCIe) and DIMM form factors are expected to reach market in 2016, and the anticipated price per bit is higher than NAND and lower than DRAM.
+
+
+
+Memristor
+Phase-change memory
+
+
+
+
+
+
+
+
+
+"Intel Micron Webcast", www.youtube.com , 44 mins

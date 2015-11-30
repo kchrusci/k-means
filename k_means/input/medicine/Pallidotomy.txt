@@ -1,0 +1,9 @@
+Pallidotomy is a neurosurgical procedure whereby a tiny electrical probe is placed in the globus pallidus (one of the basal nuclei of the brain), which is then heated to 80  C (176  F) for 60 seconds, to destroy a small area of brain cells.
+Pallidotomy is an alternative to deep brain stimulation for the treatment of the involuntary movements known as dyskinesias which can become a problem in people with Parkinson's disease after long-term treatment with levodopa   a condition known as levodopa-induced dyskinesia. It is also sometimes used in alternative to deep brain stimulation to treat difficult cases of essential tremor.
+The Internal globus pallidus can be regarded as an "output structure" of the basal ganglia, processing input from nucleus accumbens and the striatum and sending input to the cerebral cortex via the thalamus. Thus, it is critical for the functioning of the basal ganglia. Unilateral posteroventral pallidotomy can be effective at reducing Parkinsonism, but is associated with impaired language learning (if performed on the dominant hemisphere) or impaired visuospatial contructional ability (if performed on the non-dominant hemisphere). It can also impair executive functions. Bilateral pallidotomy will not reduce Parkisonistic symptoms but will cause severe apathy and depression along with slurred, unintelligible speech, drooling, and pseudobulbar palsy.
+
+
+
+Stereotactic pallidotomy was pioneered by Dr. Hirotaro Narabayashi.
+
+
