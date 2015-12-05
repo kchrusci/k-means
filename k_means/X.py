@@ -6,27 +6,29 @@ class X:
         # set group to none
         self.group = 0
         # count how many words it has
-        for k in range(len(input_data)):
-            self.mean = self.mean + input_data[k].number
+	self.mean=0
+        for k in range(len(input_data.number)):
+            self.mean = self.mean + input_data.number[k]
         # distances to help assignment to a group
-        self.distance = 0
-        self.new_distance = 0
+        self.distance = 0.0
+        self.new_distance = 0.0
 
-    def distance(self, centr):
-        self.new_distance = 0
+    def distances(self, centr):
+        self.new_distance = 0.0
         # count distance from centroid
-        for i in range(len(self.data)):
-            for j in range(len(centr.centroid)):
-                if centr.centroid.data[j].name == self.data[i].name:
-                    self.new_distance += abs(self.data[i].number - self.centroid.data[j].number) * (1 / self.mean)
+        for i in range(len(self.data.name)):
+            for j in range(len(centr.centroid.data.name)):
+                if centr.centroid.data.name[j] == self.data.name[i]:
+                    self.new_distance = abs(self.data.number[i] - centr.centroid.data.number[j]) * (1.0 / self.mean)
         # if new distance is shorter than previous (or it is first assignment) assign this doc to this group
-        if self.distance == 0 or self.new_distance < self.distance: #  uwaga! a co jesli to jest liczba bez przecinkow?!
+        if self.distance == 0.0 or self.new_distance < self.distance: 
             self.set_group(centr.number)
-
+	    self.distance=self.new_distance
+	
     # set group
     def set_group(self, g):
         self.group = g
 
     def __repr__(self):
-        return "{}".format(self.data)
+        return "{}".format(self.data.name)
 

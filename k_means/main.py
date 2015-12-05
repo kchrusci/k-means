@@ -10,7 +10,7 @@ groups = []
 
 # here should be function to find the 9 most used words 
 # and create X-class object of it with: the word as .name and .number should be equal to most uses in one file
-# then make a list of it like first_centroids = [ ... ]	
+# then make a list of it -> first_centroids = [ ... ]	
 
 for i in range(9):
     groups.append(C(first_centroids[i], i))
@@ -24,7 +24,8 @@ while flag < len(groups):
     # calculate distance for all DATA
     for i in range(len(DATA)):
         for j in range(len(groups)):
-            DATA[i].distance(j)
+            DATA[i].distances(j)
+	DATA[i].distance=0.0	# zero the distance for next iteration (because centroids may be further away??)
     # calculate new centroids and set(or not) flag that shift is good enough
     for j in range(len(groups)):
         groups[j].calc_new(DATA)
