@@ -1,4 +1,5 @@
 # class for documents
+# no need for any import?? input_data needs to have fields .name = [ word0 , word1 , ... , wordn ] and .number = [ number of word 0, ... ]
 class X:
     def __init__(self, input_data):
         # copy input DATA

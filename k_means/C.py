@@ -1,4 +1,5 @@
 # class for groups
+# import from class X needed
 class C:
     def __init__(self, centr, n):
 	self.nc = centr #WYZEROWAC LUB STWORZYC PUSTY typu X(klasa od histogramu) 
@@ -8,14 +9,18 @@ class C:
         self.all = 0  # how many docs are in this group
         self.name_flag = 0  # for comparing names in centroid and docs
         self.mean = 0  # number of words in centroid
-	self.c_shift = 2147483647
+	self.c_shift = 0.0
 
     # get all DATA of this group and calculate new centroid
     def calc_new(self, hist):  # hist = DATA ( list of X-class objects)
 	# clear all the DATA in new centroid
+	self.all = 0
+	self.mean = 0
         for i in range(len(self.nc.data.name)):
-		del self.nc.data.name[0]  # delete 0-element and do so as long as list is not empty
-	for i in range(len(hist)):  # go through all DATA
+		del self.nc.data.name[0]  # delete 0-elements and do so as long as list is not empty
+		del self.nc.data.number[0]  
+ 	# go through all DATA
+	for i in range(len(hist)): 
             if hist[i].group == self.number:  # check if it belongs to this group
                 self.all += 1  # increment group member counter
                 for j in range(len(hist[i].data.name)):  # check all the words in X'class histogram
@@ -28,12 +33,11 @@ class C:
                         self.nc.data.name.append(hist[i].data.name[j])
 			self.nc.data.number.append(hist[i].data.number[j])
 
-	# na razie niech zostanie zakomentowane ale wydaje mi sie ze to jest blad, nie wiem czemu to mialo sluzyc
-        # for k in len(self.nc):
-        #    self.nc[k].number /= self.all
+	# divide all numbers by number of docs in this group
+        for k in range(len(self.nc.data.number)):
+            self.nc.data.number[k] /= ( 1.0 * self.all )
 
         # how many words are there??
-	self.mean = 0
         for k in range(len(self.nc.data.number)):
             self.mean = self.mean + self.nc.data.number[k]
         #what is the difference between data in old and new centroid?
@@ -43,7 +47,7 @@ class C:
             for k in range(len(self.nc.data.name)):
                 for l in range(len(self.centroid.data.name)):
                     if self.nc.data.name[k] == self.centroid.data.name[l]:
-                        self.c_shift += abs(self.nc.data.number[k] - self.centroid.data.number[l]) * (1 / self.mean)
+                        self.c_shift += abs(self.nc.data.number[k] - self.centroid.data.number[l]) * (1.0 / self.mean)
 
         self.centroid = self.nc
 

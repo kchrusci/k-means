@@ -1,4 +1,5 @@
 # main function
+# import from both class X and C needed
 # get all docs and make of them class X objects
 DATA = []
 for i in raw_DATA:
@@ -21,11 +22,12 @@ flag = 0
 minimum = 0.001
 while flag < len(groups):
     flag = 0
-    # calculate distance for all DATA
+    # calculate distances from centroids for all DATA
     for i in range(len(DATA)):
         for j in groups:
             DATA[i].distances(j)
 	DATA[i].distance=0.0	# zero the distance for next iteration (because centroids may be further away??)
+
     # calculate new centroids and set(or not) flag that shift is good enough
     for j in groups:
         j.calc_new(DATA)
