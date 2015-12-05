@@ -8,7 +8,7 @@ class C:
         self.all = 0  # how many docs are in this group
         self.name_flag = 0  # for comparing names in centroid and docs
         self.mean = 0  # number of words in centroid
-	self.c_shift
+	self.c_shift = 2147483647
 
     # get all DATA of this group and calculate new centroid
     def calc_new(self, hist):  # hist = DATA ( list of X-class objects)
