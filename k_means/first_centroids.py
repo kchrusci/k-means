@@ -1,6 +1,6 @@
 # creating first centroids from histograms with sorted (!) DATA
 
-def create_first_centroids(number_of_groups, histograms) 
+def create_first_centroids(number_of_groups, histograms):
 
     most_common = []  # create list of histograms best suited for being first centroids
 
@@ -27,8 +27,8 @@ def create_first_centroids(number_of_groups, histograms)
     for i in range(len(most_common)):
         copied_histogram = most_common[i]
         number, value = copied_histogram.table[0]
-        copied_histogram.words = [y]
-        copied_histogram.numbers = [x]
+        copied_histogram.words = [value]
+        copied_histogram.numbers = [number]
         most_common[i] = copied_histogram
 
     return most_common
