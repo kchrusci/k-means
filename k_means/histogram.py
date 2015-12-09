@@ -1,7 +1,7 @@
 import string
+import os.path
 
 
-<<<<<<< HEAD
 class Histogram:
 
     def __init__(self, document):
@@ -10,7 +10,7 @@ class Histogram:
         self.table = []
         self.document = document
         self.word_flag = 0
-        self.doc_name = ""
+        self.doc_name = os.path.split(document)
         self.words = []
         self.numbers = []
 
@@ -32,63 +32,23 @@ class Histogram:
             if word_flag == 0:
                 self.h[word] = self.h.get(word, 0) + 1
 
-    @staticmethod
-    def total_words(h):
-        return sum(h.values())
+    def total_words(self):
+        return sum(self.h.values())
 
-    @staticmethod
-    def different_words(h):
-        return len(h)
+    def different_words(self):
+        return len(self.h)
 
     def get_words(self):
-        for key, value in h.items():
+        for key, value in self.h.items():
             self.words.append(key)
             self.numbers.append(value)
 
-    def most_common(self, h):
-        for key, value in h.items():
+    def sort_histogram(self):
+        for key, value in self.h.items():
             self.table.append((value, key))
 
         self.table.sort(reverse=True)
         return self.table
-=======
-def process_file(document):
-    h = dict()
-    fp = open(document)
-    for line in fp:
-        process_line(line, h)
-    return h
 
 
-def process_line(line, h):
-    line = line.replace('-', ' ')
 
-    for word in line.split():
-        word = word.strip(string.punctuation + string.whitespace)
-        word = word.lower()
-        h[word] = h.get(word, 0) + 1
-
-
-def total_words(h):
-    return sum(h.values())
-
-
-def different_words(h):
-    return len(h)
-
-
-def most_common(h):
-    table = []
-    for key, value in h.items():
-        table.append((value, key))
-
-    table.sort(reverse=True)
-    return table
-
-
-hist = process_file('input/Sensor.txt')
-print 'Histogram:', hist
-print 'Total number of words:', total_words(hist)
-print 'Number of different words:', different_words(hist)
-print 'Most common word', most_common(hist)
->>>>>>> 71ab0b4113c427c5e773fcbef6609f562a0776bf
