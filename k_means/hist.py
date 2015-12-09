@@ -1,3 +1,4 @@
+# This file is just for tests purpose and will be deleted
 import string
 import os.path
 
@@ -6,7 +7,6 @@ def process_file(document):
     h = dict()
     fp = open(document)
     doc_name = os.path.split(document)
-    print doc_name
     for line in fp:
         process_line(line, h)
     return h
@@ -77,24 +77,17 @@ def most_common_word(h):
     print "Words:",  words
     print "Numbers:", numbers
 
+#  Tests
+path = 'input'
+histograms = []
 
-hist = process_file('input/france/1900-Summer-Olympics.txt')
-most_common = []
-print 'Histogram:', hist
-print 'Total number of words:', total_words(hist)
-print 'Number of different words:', different_words(hist)
-print 'Sort', sort_histogram(hist)
-# print "Common word ", most_common_word(hist)
-# print 'List of words and numbers', get_words(hist)
-t = sort_histogram(hist)
-most_common.append(t[0])
-print most_common
-# x, y = t[0]
-# words = [y]
-# numbers = [x]
-# print "Words:",  words
-# print "Numbers:", numbers
-# print 'Histogram:'
-# for freq, word in t[0:total_words(hist)]:
-#    print word, '\t', freq
-# print t
+for element in os.listdir(path):
+    temp_path = os.path.join(path, element)
+    for directory in os.listdir(temp_path):
+        full_path = os.path.join(temp_path, directory)
+        hist = process_file(full_path)
+        histograms.append(sort_histogram(hist))
+
+print len(histograms)
+for i in xrange(0, len(histograms)):
+    print histograms[i]

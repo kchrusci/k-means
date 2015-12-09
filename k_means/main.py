@@ -1,18 +1,16 @@
 from probe import Probe
 from cluster import Cluster
-from  histogram import Histogram
+from histogram import Histogram
 import os
 
-path = '/input'
+path = 'input'
 histograms = []
-most_common = []
 
 for element in os.listdir(path):
     temp_path = os.path.join(path, element)
     for directory in os.listdir(temp_path):
         full_path = os.path.join(temp_path, directory)
         hist = Histogram(full_path).sort_histogram()
-        most_common.append(hist[0])
         histograms.append(hist)
 
 # main function
