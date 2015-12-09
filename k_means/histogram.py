@@ -6,9 +6,9 @@ class Histogram:
 
     def __init__(self, document):
         self.h = dict()
+        self.document = document
         self.fp = open(self.document)
         self.table = []
-        self.document = document
         self.word_flag = 0
         self.doc_name = os.path.split(document)
         self.words = []
