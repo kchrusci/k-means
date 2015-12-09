@@ -43,6 +43,9 @@ class Histogram:
             self.words.append(key)
             self.numbers.append(value)
 
+    def get_numbers(self):
+        return self.numbers
+
     def sort_histogram(self):
         for key, value in self.h.items():
             self.table.append((value, key))

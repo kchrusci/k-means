@@ -1,6 +1,7 @@
 # class for documents
 # no need for any import?? input_data needs to have fields .words = [ word0 , word1 , ... , wordn ]
 # and .number = [ number of word 0, ... ]
+from process import Process
 
 
 class Probe:
