@@ -12,6 +12,7 @@ def group_numbers(path):
 def get_histograms(path, bad_words):
     histograms = []
     names = []
+    pair = []
     for element in os.listdir(path):
         temp_path = os.path.join(path, element)
         for directory in os.listdir(temp_path):
@@ -29,4 +30,3 @@ def get_histograms(path, bad_words):
             names.append(hist.push_name())
             pair = [histograms, names]
     return pair
-

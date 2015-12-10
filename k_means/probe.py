@@ -11,8 +11,8 @@ class Probe:
         self.group = 0
         # count how many words it has
         self.total = 0
-        for k in range(len(input_data.numbers)):
-            self.total = self.total + input_data.numbers[k]
+        for k in range(len(input_data.number)):
+            self.total = self.total + input_data.number[k]
         # distances to help assignment to a group
         self.distance = 0.0
         self.new_distance = 0.0

@@ -13,14 +13,12 @@ def create_first_centroids(number_of_groups, histograms):
             # get the number and the name of most common word used in this (already sorted) histogram
             number = i.data.number[0]
             word = i.data.words[0]
-
             j = 0
             # go through out temporary "centroids"
             while j < number_of_groups:
                 # to check if this particular histogram is better suited than any temporary
                 temp_number = most_common[j].data.number[0]
                 temp_word = most_common[j].data.words[0]  #
-
                 if number > temp_number:
                     # shift the list
                     most_common[(j+1):len(most_common)] = most_common[j:(len(most_common)-1)]

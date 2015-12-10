@@ -4,7 +4,6 @@ class Process:
         self.words = []
         self.number = []
         self.doc_name = ""
-
         for value, key in histogram:
             self.words.append(key)
             self.number.append(value)

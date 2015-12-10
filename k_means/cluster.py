@@ -1,5 +1,6 @@
 # class for groups
-# import from class X needed ??
+import logging
+_logger = logging.getLogger(__name__)
 
 
 class Cluster:
@@ -19,10 +20,10 @@ class Cluster:
         self.all = 0
         self.total = 0
         self.nc.data.words = []
-        self.nc.data.numbers = []
+        self.nc.data.number = []
         # go through all DATA
         for i in range(len(hist)):
-            print "Working..."
+            _logger.info("Processing...")
             if hist[i].group == self.number:  # check if it belongs to this group
                 self.all += 1  # increment group member counter
                 for j in range(len(hist[i].data.words)):  # check all the words in X'class histogram
@@ -30,19 +31,19 @@ class Cluster:
                     for k in range(len(self.nc.data.words)):  # check for words already in centroid
                         # if it is already here just increase the value
                         if self.nc.data.words[k] == hist[i].data.words[j]:
-                            self.nc.data.numbers[k] = self.nc.data.numberss[k] + hist[i].data.numbers[j]
+                            self.nc.data.number[k] = self.nc.data.number[k] + hist[i].data.number[j]
                             self.name_flag = 1
                     if self.name_flag == 0:  # if it wasn't already in centroid add it
                         self.nc.data.words.append(hist[i].data.words[j])
-                        self.nc.data.numbers.append(hist[i].data.numbers[j])
+                        self.nc.data.number.append(hist[i].data.number[j])
 
         # divide all numbers by number of docs in this group
-        for k in range(len(self.nc.data.numbers)):
-            self.nc.data.numbers[k] /= (1.0 * self.all)
+        for k in range(len(self.nc.data.number)):
+            self.nc.data.number[k] /= (1.0 * self.all)
 
         # how many words are there??
-        for k in range(len(self.nc.data.numbers)):
-            self.total = self.total + self.nc.data.numbers[k]
+        for k in range(len(self.nc.data.number)):
+            self.total = self.total + self.nc.data.number[k]
         # what is the difference between data in old and new centroid?
         if len(self.nc.data.words) != len(self.centroid.data.words):
             self.flag = 0  # big enough if there is new word (or lacks some old word)
@@ -51,7 +52,7 @@ class Cluster:
             for k in range(len(self.nc.data.words)):
                 for l in range(len(self.centroid.data.words)):
                     if self.nc.data.words[k] == self.centroid.data.words[l]:
-                        self.c_shift += abs(self.nc.data.numbers[k] - self.centroid.data.numbers[l]) * (1.0 / self.total)
+                        self.c_shift += abs(self.nc.data.number[k] - self.centroid.data.number[l]) * (1.0 / self.total)
 
         self.centroid = self.nc
 
