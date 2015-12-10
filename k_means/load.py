@@ -27,6 +27,6 @@ def get_histograms(path, bad_words):
             # append histograms table with histogram of current document
             histograms.append(hist_sort)
             names.append(hist.push_name())
-            A = [histograms, names]
-    return A
+            pair = [histograms, names]
+    return pair
 
