@@ -1,5 +1,6 @@
 # class for groups
-# import from class X needed ??
+import logging
+_logger = logging.getLogger(__name__)
 
 
 class Cluster:
@@ -22,7 +23,7 @@ class Cluster:
         self.nc.data.number = []
         # go through all DATA
         for i in range(len(hist)):
-            print "Working..."
+            _logger.info("Processing...")
             if hist[i].group == self.number:  # check if it belongs to this group
                 self.all += 1  # increment group member counter
                 for j in range(len(hist[i].data.words)):  # check all the words in X'class histogram

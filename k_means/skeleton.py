@@ -15,7 +15,7 @@ also be used as template for Python modules.
 """
 from probe import Probe
 from cluster import Cluster
-from process import  Process
+from process import Process
 import load
 import first_centroids
 import presentation
@@ -106,7 +106,7 @@ def main(args):
     # start looping
     flag = 0
     # set minimum centroid shift
-    minimum = 0.001
+    minimum = 0.0001
     while flag < len(groups):
         flag = 0
     # calculate distances from centroids for all DATA
