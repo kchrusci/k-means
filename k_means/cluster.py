@@ -52,7 +52,8 @@ class Cluster:
             for k in range(len(self.nc.data.words)):
                 for l in range(len(self.centroid.data.words)):
                     if self.nc.data.words[k] == self.centroid.data.words[l]:
-                        self.c_shift += abs(self.nc.data.number[k] - self.centroid.data.number[l]) * (1.0 / self.total)
+                        self.c_shift += abs(self.nc.data.number[k] - self.centroid.data.number[l]) * (1000.0 /
+                                                                                                      self.total)
 
         self.centroid = self.nc
 

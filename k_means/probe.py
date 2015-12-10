@@ -23,7 +23,6 @@ class Probe:
     def distances(self, centr, diff_words_distance):
         self.new_distance = 0.0
         # count distance from centroid
-        flag = 0
         for i in range(len(self.data.words)):
             _logger.info("Processing...")
             flag = 0

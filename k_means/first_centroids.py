@@ -34,10 +34,10 @@ def create_first_centroids(number_of_groups, histograms):
 
     for i in range(len(most_common)):
         copied_histogram = most_common[i]
-        number = copied_histogram.data.number
-        value = copied_histogram.data.words
-        copied_histogram.data.words = value
-        copied_histogram.data.numbers = number
+        number = copied_histogram.data.number[0]
+        value = copied_histogram.data.words[0]
+        copied_histogram.data.words = [value]
+        copied_histogram.data.numbers = [number]
         most_common[i] = copied_histogram
 
     return most_common

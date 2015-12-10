@@ -24,8 +24,8 @@ import sys
 import logging
 from k_means import __version__
 
-__author__ = "celinoslawa"
-__copyright__ = "celinoslawa"
+__author__ = ""
+__copyright__ = ""
 __license__ = "none"
 
 _logger = logging.getLogger(__name__)
@@ -64,7 +64,7 @@ def main(args):
     # Create histograms from documents inside of categories
     histograms = []
     names = []
-    N = [ histograms, names]
+    N = [histograms, names]
     _logger.info("Load documents from categories and create histograms")
     N = load.get_histograms(input_path, bad_words)
     histograms = N[0]
@@ -73,7 +73,8 @@ def main(args):
     number_of_groups = load.group_numbers(input_path)
     # Get all docs and make of them class Probe objects
     DATA = []
-    _logger.info("Probe histograms")
+    info = "Probe: " + str(len(histograms)) + " histograms"
+    _logger.info(info)
     for element in histograms:
         element = Process(element)
         DATA.append(Probe(element))
@@ -86,7 +87,7 @@ def main(args):
 
     # create clusters
     # set minimum centroid shift
-    minimum = 0.0001
+    minimum = 0.00001
     for i in range(number_of_groups):
         _logger.info("Create cluster")
         groups.append(Cluster(first_cent[i], i))
@@ -107,6 +108,7 @@ def main(args):
     # start looping
     flag = 0
     while flag < len(groups):
+        _logger.info("Next iteration")
         flag = 0
     # calculate distances from centroids for all DATA
         for i in range(len(DATA)):
@@ -135,7 +137,7 @@ def main(args):
 
 
 def run():
-    logging.basicConfig(filename='info.log', level=logging.INFO, stream=sys.stdout)
+    logging.basicConfig(filename='info.log', level=logging.INFO, stream=sys.stdout, filemode='w')
     main(sys.argv[1:])
 
 
