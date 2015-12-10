@@ -68,6 +68,3 @@ class Histogram:
     # return document name
     def push_name(self):
         return self.doc_name
-
-
-

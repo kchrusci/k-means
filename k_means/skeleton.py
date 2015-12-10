@@ -77,7 +77,6 @@ def main(args):
     for element in histograms:
         element = Process(element)
         DATA.append(Probe(element))
-    print len(DATA)
 
     # picking first centroids
     groups = []
@@ -86,6 +85,8 @@ def main(args):
     first_cent = first_centroids.create_first_centroids(number_of_groups, DATA)
 
     # create clusters
+    # set minimum centroid shift
+    minimum = 0.0001
     for i in range(number_of_groups):
         _logger.info("Create cluster")
         groups.append(Cluster(first_cent[i], i))
@@ -95,7 +96,7 @@ def main(args):
         for j in groups:
             _logger.info("Calculate distance")
             DATA[i].get_doc_name(names[i])
-            DATA[i].distances(j)
+            DATA[i].distances(j, minimum)
         DATA[i].distance = 0.0  # zero the distance for next iteration (because centroids may be further away)
 
     # calculate new centroids and set(or not) flag that shift is good enough
@@ -113,7 +114,7 @@ def main(args):
         for i in range(len(DATA)):
             for j in groups:
                 _logger.info("Calculate distances")
-                DATA[i].distances(j)
+                DATA[i].distances(j, minimum)
             DATA[i].distance = 0.0  # zero the distance for next iteration (because centroids may be further away)
 
     # calculate new centroids and set(or not) flag that shift is good enough
@@ -124,13 +125,19 @@ def main(args):
             if j.flag == 1:
                 flag += 1
 
-    # presentation of data
     _logger.info("Done")
-    presentation.get_presentation(groups, DATA)
+
+    # presentation of data
+    clustered_docs = presentation.get_presentation(groups, DATA)
+    _logger.info("Save clustered documents to output.txt")
+    input_file = open('output.txt', 'w')
+    for element in clustered_docs:
+        input_file.write(str(element) + "\n")
+    input_file.close()
 
 
 def run():
-    logging.basicConfig(level=logging.INFO, stream=sys.stdout)
+    logging.basicConfig(filename='info.log', level=logging.INFO, stream=sys.stdout)
     main(sys.argv[1:])
 
 
