@@ -22,8 +22,7 @@ import presentation
 import argparse
 import sys
 import logging
-
-
+from k_means import __version__
 
 __author__ = "celinoslawa"
 __copyright__ = "celinoslawa"
@@ -45,6 +44,8 @@ def parse_args(args):
         '-v',
         '--version',
         action='version',
+        version='k-means {ver}'.format(ver=__version__)
+
     )
     return parser.parse_args(args)
 
@@ -65,14 +66,15 @@ def main(args):
     histograms = []
     names = []
     N = [ histograms, names]
+    _logger.info("Load documents from categories and create histograms")
     N = load.get_histograms(input_path, bad_words)
     histograms = N[0]
     names = N[1]
     # Get number of categories
     number_of_groups = load.group_numbers(input_path)
     # Get all docs and make of them class Probe objects
-    data = []
-    processed_histograms = []
+    DATA = []
+    _logger.info("Probe histograms")
     for element in histograms:
         element = Process(element)
         DATA.append(Probe(element))
@@ -81,21 +83,25 @@ def main(args):
     # picking first centroids
     groups = []
     # find the most common words to set them as centroids
+    _logger.info("Choose first centroids")
     first_cent = first_centroids.create_first_centroids(number_of_groups, DATA)
 
-    # Create clusters
+    # create clusters
     for i in range(number_of_groups):
+        _logger.info("Create cluster")
         groups.append(Cluster(first_cent[i], i))
     # first iteration
-     # calculate distances from centroids for all DATA
+    # calculate distances from centroids for all DATA
     for i in range(len(DATA)):
         for j in groups:
+            _logger.info("Calculate distance")
             DATA[i].get_doc_name(names[i])
             DATA[i].distances(j)
-        DATA[i].distance = 0.0  # zero the distance for next iteration (because centroids may be further away??)
+        DATA[i].distance = 0.0  # zero the distance for next iteration (because centroids may be further away)
 
     # calculate new centroids and set(or not) flag that shift is good enough
     for j in groups:
+        _logger.info("Calculate centroid")
         j.calc_new(DATA)
 
     # start looping
@@ -107,18 +113,20 @@ def main(args):
     # calculate distances from centroids for all data
         for i in range(len(data)):
             for j in groups:
+                _logger.info("Calculate distances")
                 DATA[i].distances(j)
-            DATA[i].distance = 0.0  # zero the distance for next iteration (because centroids may be further away??)
+            DATA[i].distance = 0.0  # zero the distance for next iteration (because centroids may be further away)
 
     # calculate new centroids and set(or not) flag that shift is good enough
         for j in groups:
-            j.calc_new(data)
+            _logger.info("Calculate new centroid")
+            j.calc_new(DATA)
             j.set_flag(minimum)
             if j.flag == 1:
                 flag += 1
 
-    # Presentation of data
-    print "Done"
+    # presentation of data
+    _logger.info("Done")
     presentation.get_presentation(groups, DATA)
 
 
