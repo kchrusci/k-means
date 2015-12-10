@@ -15,7 +15,7 @@ also be used as template for Python modules.
 """
 from probe import Probe
 from cluster import Cluster
-from process import  Process
+from process import Process
 
 import load
 import first_centroids
@@ -67,16 +67,18 @@ def main(args):
     # Get number of categories
     number_of_groups = load.group_numbers(input_path)
     # Get all docs and make of them class Probe objects
-    DATA = []
+    data = []
+    processed_histograms = []
     for element in histograms:
         element = Process(element)
-        DATA.append(Probe(element))
+        data.append(Probe(element))
+        processed_histograms.append(element)
 
     # picking first centroids
     groups = []
 
     # find the most common words to set them as centroids
-    first_cent = first_centroids.create_first_centroids(number_of_groups, histograms)
+    first_cent = first_centroids.create_first_centroids(number_of_groups, processed_histograms)
 
     # Create clusters
     for i in range(number_of_groups):
@@ -88,21 +90,21 @@ def main(args):
     minimum = 0.001
     while flag < len(groups):
         flag = 0
-    # calculate distances from centroids for all DATA
-        for i in range(len(DATA)):
+    # calculate distances from centroids for all data
+        for i in range(len(data)):
             for j in groups:
-                DATA[i].distances(j)
-        DATA[i].distance = 0.0  # zero the distance for next iteration (because centroids may be further away??)
+                data[i].distances(j)
+        data[i].distance = 0.0  # zero the distance for next iteration (because centroids may be further away??)
 
     # calculate new centroids and set(or not) flag that shift is good enough
         for j in groups:
-            j.calc_new(DATA)
+            j.calc_new(data)
             j.set_flag(minimum)
             if j.flag == 1:
                 flag += 1
 
     # Presentation of data
-    presentation.get_presentation(groups, DATA)
+    presentation.get_presentation(groups, data)
 
 
 def run():

@@ -12,8 +12,8 @@ class Probe:
         self.group = 0
         # count how many words it has
         self.total = 0
-        for k in range(len(input_data.number)):
-            self.total = self.total + input_data.number[k]
+        for k in range(len(input_data.numbers)):
+            self.total = self.total + input_data.numbers[k]
         # distances to help assignment to a group
         self.distance = 0.0
         self.new_distance = 0.0
@@ -24,7 +24,7 @@ class Probe:
         for i in range(len(self.data.words)):
             for j in range(len(centr.centroid.data.words)):
                 if centr.centroid.data.words[j] == self.data.words[i]:
-                    self.new_distance = abs(self.data.number[i] - centr.centroid.data.number[j]) * (1.0 / self.total)
+                    self.new_distance = abs(self.data.numbers[i] - centr.centroid.data.numbers[j]) * (1.0 / self.total)
         # if new distance is shorter than previous (or it is first assignment) assign this doc to this group
         if self.distance == 0.0 or self.new_distance < self.distance: 
             self.set_group(centr.number)
