@@ -63,3 +63,39 @@ class Cluster:
             self.flag = 1
         else:
             self.flag = 0
+
+    def most_common_in_group(self):
+        most_common_words = []
+        most_common_numbers = []
+        for i in xrange(0, len(self.centroid.data.words)):
+            # Five most common words in groups
+            if len(self.centroid.data.words) < 5:
+                max_number = len(self.centroid.data.words)
+            else:
+                max_number = 5
+            if len(most_common_words) < max_number:
+                most_common_words.append(self.centroid.data.words[i])
+                most_common_numbers.append(self.centroid.data.number[i])
+            else:
+                # get the number and the name of most common word used in this (already sorted) histogram of centroid
+                number = self.centroid.data.number[i]
+                j = 0
+                # go through out temporary "centroids"
+                while j < max_number:
+                    # to check if this particular histogram is better suited than any temporary
+                    temp_number = most_common_numbers[j]
+                    if number > temp_number:
+                        # shift the list for words
+                        most_common_words[(j+1):len(most_common_words)] = most_common_words[j:(len(most_common_words)-1)]
+                        # and add the new temp histogram on appropriate position
+                        most_common_words[j] = self.centroid.data.words[i]
+
+                        # shift the list for numbers
+                        most_common_numbers[(j+1):len(most_common_numbers)] = \
+                            most_common_numbers[j:(len(most_common_numbers)-1)]
+                        # and add the new temp histogram on appropriate position
+                        most_common_numbers[j] = self.centroid.data.number[i]
+                        break  # it is placed on list so end loop and check the next histogram
+                    else:
+                        j += 1
+        return most_common_words

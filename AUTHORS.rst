@@ -9,4 +9,4 @@ Developers
 Tester
 ==========
 
-* celinoslawa <ajob@student.agh.edu.pl>
+* celinoslawa <agajob@student.agh.edu.pl>
