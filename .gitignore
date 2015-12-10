@@ -39,3 +39,7 @@ docs/api/*
 docs/_build/*
 cover/*
 MANIFEST
+
+#Output files
+info.log
+output.txt
