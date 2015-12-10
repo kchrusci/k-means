@@ -53,5 +53,8 @@ class Histogram:
         self.table.sort(reverse=True)
         return self.table
 
+    def push_name(self):
+        return self.doc_name
+
 
 

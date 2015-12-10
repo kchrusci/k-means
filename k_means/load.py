@@ -11,6 +11,7 @@ def group_numbers(path):
 
 def get_histograms(path, bad_words):
     histograms = []
+    names = []
     for element in os.listdir(path):
         temp_path = os.path.join(path, element)
         for directory in os.listdir(temp_path):
@@ -25,5 +26,7 @@ def get_histograms(path, bad_words):
             hist_sort = hist.sort_histogram()
             # append histograms table with histogram of current document
             histograms.append(hist_sort)
-    return histograms
+            names.append(hist.push_name())
+            A = [histograms, names]
+    return A
 
