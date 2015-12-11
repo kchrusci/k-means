@@ -201,9 +201,9 @@ nrOFCluster = 3
 nrOfGivenIterations = 3
 
 data = Dataset(prepareInput('../input', 10, '/home/kchrusci/Workspace/repo/k-means/projektpython/ForbiddenWords.txt'))
-#print "data = ", data.getListOfVectors()
+print "data = ", data.getListOfVectors()
 
 kMeans(data,nrOFCluster,nrOfGivenIterations)
-#print(getAllFiles('/home/koper/PycharmProjects/First/Samples'))
+print(getAllFiles('/home/koper/PycharmProjects/First/Samples'))
 
 
