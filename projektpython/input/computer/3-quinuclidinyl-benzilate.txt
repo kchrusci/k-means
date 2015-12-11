@@ -1,0 +1,48 @@
+3-Quinuclidinyl benzilate (QNB)   IUPAC name 1-azabicyclo[2.2.2]oct-3-yl 2-hydroxy-2,2-diphenylacetate; US Army code EA-2277; NATO code BZ; Soviet code Substance 78   is an odorless military incapacitating agent.
+BZ is a glycolate anticholinergic compound related to atropine, scopolamine, hyoscyamine, and other deliriants. Dispersal would be as an aerosolized solid (primarily for inhalation) or as agent dissolved in one or more solvents for ingestion or percutaneous absorption.
+Acting as a competitive inhibitor of acetylcholine at postsynaptic and postjunctional muscarinic receptor sites in smooth muscle, exocrine glands, autonomic ganglia, and the brain, BZ decreases the effective concentration of acetylcholine seen by receptors at these sites. Thus, BZ causes PNS effects that in general are the opposite of those seen in nerve agent poisoning. CNS effects include stupor, confusion, and confabulation with concrete and panoramic illusions and hallucinations, and with regression to primitive, involuntary behaviors such as floccillation and disrobing.
+Physostigmine, which increases the concentration of acetylcholine in synapses and in neuromuscular and neuroglandular junctions, is a specific antidote.
+Production of BZ is controlled under schedule 2 of the Chemical Weapons Convention of 1997.
+
+
+
+
+
+
+BZ was invented by the Swiss pharmaceutical company Hoffman-LaRoche in 1951. The company was investigating anti-spasmodic agents, similar to tropine, for treating gastrointestinal ailments when the chemical was discovered. It was then investigated for possible use in ulcer treatment, but was found unsuitable. At this time the United States military investigated it along with a wide range of possible nonlethal, psychoactive incapacitating agents including psychedelic drugs such as LSD and THC, dissociative drugs such as ketamine and phencyclidine, potent opioids such as fentanyl, as well as several glycolate anticholinergics. By 1959 the United States Army showed significant interest in deploying it as a chemical warfare agent. It was originally designated "TK", but when it was standardized by the Army in 1961 it received the NATO code name "BZ". The agent commonly became known as "Buzz" because of this abbreviation and the effects it had on the mental state of the human volunteers intoxicated with it in research studies at Edgewood Arsenal in Maryland. As described in retired Army psychiatrist James Ketchum s autobiographical book Chemical Warfare: Secrets Almost Forgotten (2006), work proceeded in 1964 when a general envisioned a scheme to incapacitate an entire trawler with aerosolized BZ; this effort was dubbed Project DORK. BZ was ultimately weaponized for delivery in the M44 generator cluster and the M43 cluster bomb, until all such stocks were destroyed in 1989 as part of a general downsizing of the US chemical warfare program.
+
+
+
+In February 1998, the British Ministry of Defence accused Iraq of having stockpiled large amounts of a glycolate anticholinergic incapacitating agent known as Agent 15. Agent 15 is an alleged Iraqi incapacitating agent that is likely to be chemically either identical to BZ or closely related to it. Agent 15 was reportedly stockpiled in large quantities prior to and during the Persian Gulf War. However after the war the CIA concluded that Iraq had not stockpiled or weaponised Agent 15.
+In January 2013, an unidentified U.S. administration official, referring to an undisclosed U.S. State Department cable, claimed that "Syrian contacts made a compelling case that Agent 15, a hallucinogenic chemical similar to BZ, was used in Homs". However in response to these reports U.S. National Security Council spokesman stated "The reporting we have seen from media sources regarding alleged chemical weapons incidents in Syria has not been consistent with what we believe to be true about the Syrian chemical weapons program". The chemical was also allegedly used in the August 2013 Ghouta attacks.
+
+
+
+In the film Jacob's Ladder, the eponymous character is told that the horrific events he experienced on his final day in Vietnam were the product of an experimental drug called "the Ladder", which was used on troops without their knowledge. At the end of the film, a message is displayed saying that reports of testing of BZ on U.S. soldiers during the Vietnam War were denied by the Pentagon. Lyne said a part of the inspiration for this motif was Martin A. Lee's book Acid Dreams: The CIA, LSD and Sixties Rebellion, but noted that "nothing in the book suggests that the drug BZ   a super-hallucinogen that has a tendency to elicit maniac behavior   was used on U.S. troops.".
+
+
+
+BZ is odorless. It is stable in most solvents, with a half-life of three to four weeks in moist air; even heat-producing munitions can disperse it. It is extremely persistent in soil and water and on most surfaces. It is slightly soluble in water; soluble in dilute acids, trichloroethylene, dimethylformamide, most organic solvents, insoluble with aqueous alkali.
+
+
+
+BZ is odorless and nonirritating with delayed symptoms several hours after contact. In the field the only immediate indications of its use may be the white smoke emanating from delivered weapons. Though detection methods have been developed for BZ, these have not been standardized for field use and are limited to laboratory analysis or specialized monitoring in industrial facilities.
+Protection from BZ means blocking it from entry into the body. At dosages adequate for a lung effect there is little risk of absorption through the skin or contact hazards from aerosols that have settled out onto surfaces. The amount of BZ that may settle out on surfaces from an aerosol is too small to represent a hazard from secondary aerosols. Therefore, the most appropriate protective response is to don a protective mask with a good quality aerosol filter. Even improvised respiratory protection (e.g., several folded pieces of cloth over the nose and mouth) may render BZ employment ineffectual.
+There is the possibility that BZ could be employed for a skin effect by adding to a skin penetrating solvent, or used for a secondary aerosol through contaminating terrain with bulk micro-pulverized BZ. However, both of these employment schemes are unlikely owing to the high cost and uncontrolled dose (potentially lethal). In any situation where BZ is present in liquid or bulk powder form, adequate skin protection with impermeable protective clothing and gloves is warranted.
+
+
+
+BZ is dispersed as an aerosol. It may be micropulverized for dissemination by a disperser (90% dissemination efficiency), or mixed with a pyrotechnic burning mixture for dissemination in burning munitions (70% dissemination efficiency). Alternatively, it may be dissolved in a solvent such as DMSO to enhance percutaneous absorption, though experiments before this proved unsatisfactory for military purposes.
+Bioavailability via ingestion and by inhalation of particles 1 micrometer in size approximates 80%, and 40 to 50%, respectively, of a parenterally delivered dose of BZ. Percutaneous absorption of BZ dissolved in propylene glycol yields, after a latent period of up to 24 hours, serum levels approximately 5 to 10% of those achieved with intravenous or intramuscular administration.
+Following absorption, BZ is systemically distributed to most organs and biological tissues of the body. Its ability to reach synapses and neuromuscular and neuroglandular junctions throughout the body is responsible for its PNS effects, whereas its ability to cross the blood brain barrier confers upon it the ability to cause CNS effects. Atropine and hyoscyamine both cross the placenta and can be found in small quantities in breast milk; whether this is also true for BZ is unclear.
+Metabolism of BZ would be expected to occur primarily in the liver, with elimination of unchanged agent and metabolites chiefly in the urine.
+
+
+
+The characteristic that makes BZ an incapacitating rather than a toxic chemical warfare agent is its high safety margin (ICt50/LCt50) of around 40-fold (range 32 to 384 fold). It has an ID50 of 0.00616 mg per person (i.v.) with a probit slope of 9.2. The respiratory ICt50 (median incapacitating dosage) for BZ is 110 mg min/m  (mild activity 15 l/min rate of breathing), whereas the LCt50 is often estimated to be around 3,800 41,300 mg min/m .
+
+
+
+The agent BZ and other anticholinergic glycolates act as competitive inhibitors of the neurotransmitter acetylcholine neurons (1) at postjunctional muscarinic receptors in cardiac and smooth muscle and in exocrine (ducted) glands and (2) at postsynaptic receptors in neurons. As the concentration of BZ at these sites increases, the proportion of receptors available for binding to acetylcholine decreases and the end organ "sees" less acetylcholine. (One way of visualizing this process is to imagine BZ coating the surface of the end organ and preventing acetylcholine from reaching its receptors.) Because BZ has little to no agonist activity with respect to acetylcholine, high concentrations of BZ essentially substitute a "dud" for acetylcholine at these sites and lead to clinical effects reflective of understimulation of end organs.
+
+

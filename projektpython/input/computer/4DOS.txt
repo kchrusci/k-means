@@ -1,0 +1,58 @@
+4DOS is a command line interpreter by JP Software, designed to replace the default command interpreter COMMAND.COM in DOS and Windows 95/98/SE/ME. The 4DOS family of programs are meant to replace the default command processor. 4OS2 and 4NT replace CMD.EXE in OS/2 and Windows NT respectively. 4DOS was written by Rex Conn and Tom Rawson; it was first released in 1989. These programs can also be initiated from the command line and/or called by scripts.
+
+
+
+4DOS is most often used with the MS-DOS-Windows 95 stream of operating systems and it can be also used with Windows NT type machines, IBM PC DOS and also later DR DOS versions. Since Windows NT-2000 includes both Command.com and cmd.exe, 4DOS and 4NT and derivatives can both be installed. Earlier versions of 4OS2 can be run under Windows NT, and OS/2 can run the two MS-DOS and Windows NT shells, all three can be used on Windows NT-type machines and OS/2 multiple boot machines.
+Amongst the many commands, statements and functions that 4DOS has and MS-DOS/Windows 95/98 Command.com does not by default include reading keyboard input and a simpler method of working with colors of screen and text.
+The default file extension for 4DOS scripts is .btm
+Like Command.com, 4DOS has both internal and external commands, statements, and functions. Provided that the subdirectory containing 4DOS is the search path, the external commands can be co-mingled with MS-DOS in batch files (and vice versa) and used from the shell prompt; this is also the case with 4OS2, 4NT and other command shells like the Hamilton C shell and MKS Toolkit's Unix shells. The inverse is also true. One example of this would be a shell script needing mathematics function or stronger text-handling abilities so grep, awk and sed can be called from a 4DOS batch file. More involved functionality can be added to shell scripts including batch files by means of one of several methods of calling Perl, QBasic, VBScript, Rexx &c
+A graphical version of 4DOS, 4OS2, and 4NT, called Take Command was released with a feature set corresponding to version 4DOS 5.5, 4OS2, and 4NT 2.5 and updated after this. Development on this line stopped with the corresponding character-mode versions. There was a graphical program Take Command/16, for Windows 3.1.
+4OS2 is a similar replacement for IBM's OS/2 command interpreter. This was first released at the same time as 4DOS version 4, and has a similar feature set. Like 4DOS, this is released as open source, and is still being actively developed. It appears in the feature set of 2011's eComStation 2.10, and in the freeware os2free project. Take Command for OS/2 is not currently being developed.
+4NT was first released as 4DOS for Windows NT (versions 1.x, 2.x), but became 4NT until the restructure after version 8. The program is a recompile of 4OS2, and continues to have features of OS/2's command processor ([CMD.EXE[), such as running REXX scripts, and EXTPROC support. A corresponding Take Command/32 exists for this, version 1 corresponding to 4NT 2.5. 4NT and Take Command/32 were released in both ANSI (Windows 9x) and Unicode (Windows NT) forms, with the ANSI version dropped at version 5.
+A new Win32 program Tabbed Command Interface (TCI), was released at the time of 4NT version 7. This program allowed one to attach (thereby reducing screen clutter) and unattach tabbed consoles to a single window. This program requires Windows XP or later.
+A new version of Take Command extends the original Tabbed Command Interface, expanded with extra windows to allow input to be composed, to graphically navigate directories and files, and extra features. 4NT is bundled as Take Command Console. A light or feature-reduced version of TCC is released as a free download. JP Software then released TC (full pack of TCI + TCC), or TCLE (TCI + TCC/LE), or TCC (just the command utility), or TCC/LE. This has been released from versions 9 to 12.1, corresponding to the underlying 4NT/TCC version.
+
+
+
+4DOS features a number of enhancements when compared to COMMAND.COM:
+Additional commands
+Extended functionality of existing commands
+Extended batch file processing facilities
+Improved command line editing, including filename completion and command history
+Support for command aliases, also in scripts
+Enhanced wildcards and the ability to filter by file sizes, date and time stamps, etcetera
+Extended syntax for redirection and piping
+Context-specific online help
+Colored directory listings
+Internal variables and variable functions
+A more sophisticated swapping mechanism, yielding more free conventional memory on most systems
+An interactive debugger for batch files
+A mechanism for creating, maintaining and displaying file descriptions
+Configuration stored in an INI file
+Support for the Windows clipboard
+Support for starting OS/2 programs.
+
+
+
+Originally distributed as shareware, 4DOS has been later released as unsupported freeware. Currently, the source code is available under a modified MIT License but it "may not be used in any commercial product without written permission from Rex Conn" and "may not be compiled for use on any operating system other than FreeDOS" so it does not qualify as open source as defined by Open Source Initiative.
+The last update by JP Software was version 7.50.130, released in August 2004. During its 15-year history, 4DOS underwent numerous updates; here are a few of the most significant.
+
+
+
+Some versions of the Norton Utilities for DOS included modified copies of 4DOS called NDOS. The last version of NDOS was bundled with Norton Utilities 8, and corresponded to 4DOS 4.03.
+
+
+
+Comparison of computer shells
+
+
+
+
+
+
+JP Software, creator of 4DOS but no longer supports it. Currently sells similar Take Command for Windows 7.
+Unofficial 4DOS support site with many batch examples, related docs and programs
+4DOS shareware and freeware downloads
+4DOS 7.50 Reference Manual (2MB PDF)
+
+4DOS @ Club Dr-DOS's Wiki

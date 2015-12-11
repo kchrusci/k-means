@@ -52,7 +52,7 @@ def parse_args(args):
 def main(args):
     args = parse_args(args)
     # path to input directory will be defined in main function of skeleton module
-    input_path = 'input'
+    input_path = '../input'
     # Unnecessary words that we would like to exclude from histogram
     bad_words = []
     unless_words = open('useless_words.txt', 'r')

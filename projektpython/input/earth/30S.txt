@@ -1,0 +1,18 @@
+30S is the smaller subunit of the 70S ribosome of prokaryotes. It is a complex of ribosomal RNA and ribonucleoproteins that functions in mRNA translation. It includes the 16S ribosomal RNA. It has about 21 basic proteins.
+The 30S subunit is the site of inhibition for antibiotics such as tetracycline and aminoglycosides.
+
+
+
+50S
+Ribosomal RNA
+50S is the larger subunit of the 70S ribosome of prokaryotes in the cell. It is the site of inhibition for antibiotics such as macrolides, chloramphenicol, clindamycin, and the pleuromutilins. It includes the 5S ribosomal RNA and 23S ribosomal RNA.
+
+
+
+^ Schluenzen F, Tocilj A, Zarivach R, Harms J, Gluehmann M, Janell D, Bashan A, Bartels H, Agmon I, Franceschi F, Yonath A (2000). "Structure of functionally activated small ribosomal subunit at 3.3 angstroms resolution". Cell 102 (5): 615 23. doi:10.1016/S0092-8674(00)00084-2. PMID 11007480. 
+
+
+
+16S rRNA, BioMineWiki
+http://pathmicro.med.sc.edu/mayer/antibiot.htm
+16S Ribosomal RNA at the US National Library of Medicine Medical Subject Headings (MeSH)
